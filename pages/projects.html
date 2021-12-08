@@ -19,7 +19,8 @@ body {
 .topnav {
   overflow: hidden;
   background-color:white;
-  margin-left: 825px;
+  display: flex;
+  justify-content: center;
 }
 
 .topnav a {
@@ -72,6 +73,78 @@ body {
     font-size: 20px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
+
+.slider-right {
+  width: 320px;
+  height: 240px;
+  background-color: yellow;
+  margin-left: 50px;
+  margin-right: 200px;
+  margin-bottom: 90px;
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+  float:right;
+}
+
+.slider-left {
+  width: 320px;
+  height: 240px;
+  background-color: yellow;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+  float:left;
+}
+
+.image-container {
+  width: 1500px;
+  background-color: pink;
+  height: 300px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position:relative;
+}
+
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+
+#slide-2:target ~ .image-container {
+  left: -320px;
+}
+
+#slide-3:target ~ .image-container {
+  left: -90px;
+}
+
+#slide-4:target ~ .image-container {
+  left: -150px;
+}
+.buttons {
+  position: relative;
+  top: -95px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: mediumaquamarine;
+}
+
 
 </style>
 
@@ -144,6 +217,68 @@ controls autoplay src="wave-bot-video.MOV"></video>
 
   <p style="margin-top: 20px;">
     <a href="https://github.com/annanyatyagi12/arduino-wave-bot">GitHub Link</a>
+  </p>
+
+</div>
+
+<div class="slider-right">
+  <span id="slide-1"></span>
+  <span id="slide-2"></span>
+  <div class="image-container">
+    <img src="../img/oneloop-pod.png" class="slide" width="320" height="240" />
+    <img src="../img/oneloop-sandia-zoom.png" class="slide" width="320" height="240" />
+  </div>
+  <div class="buttons">
+    <a href="#slide-1"></a>
+    <a href="#slide-2"></a>
+  </div>
+</div>
+
+<div class="project-title" style="margin-right: 200px; margin-left: 200px;margin-top: 50px;">
+  <p>
+    <strong>
+      May 31st, 2021: Finalist - Sandia Engineering Design Award Competition 
+    </strong>
+  </p>
+</div>
+
+<div class="project-description" style="margin-right: 200px; margin-left: 200px;">
+  <p>
+    Made it to finals with the OneLoop team as Project Manager! Judged by engineers at the Sandia National Laboratories, 
+    170 student team designs were evaluated on content, delivery, and collaboration. Our team showcased
+    our Hyperloop Pod which is propelled by 2 combustion-free LIMs, controlled by an IPC, hosts 
+    a dual tolerant pnuematic braking system and is held together by a lightweight carbon fiber chassis. The pod can travel
+    up to 288 mph in a vacuum environment. Very proud of the entire team for working so hard despite COVID.
+  </p>
+
+  <p style="margin-top: 20px;">
+    <a href="../img/oneloop-sandia-poster.png">Poster</a>
+  </p>
+
+</div>
+
+
+<img src= "../img/arduino-acclimate-cad.PNG" alt="GeeksforGeeks logo" style="margin-left: 200px; float: left; margin-right: 50px;
+margin-bottom: 20px; margin-top: 60px;" width="320" height="240"> 
+
+<div class="project-title" style="margin-right: 200px; margin-left: 200px;">
+  <p>
+    <strong>
+      May 15th, 2021: Arduino Acclimate - Automated Keyhole Turner
+    </strong>
+  </p>
+</div>
+
+<div class="project-description" style="margin-left: 200px; margin-right: 200px;">
+  <p>
+    As part of the Arduino Acclimate competition, our group desgined and prototyped a mechanism to help people with Arthritis. This device 
+    allows patients to slide a key into a magnetic holder and automatically twists it into the keyhole using pressure sensors. 
+    A device like this can be used for cars, house doors, safes, and any other object that requires a key. Our group recieved most 
+    creative solution and best aesthetics 
+  </p>
+
+  <p style="margin-top: 20px;">
+    <a href="https://www.youtube.com/watch?v=O9HshwNjOPc&ab_channel=RoshelleRincon">YouTube Link</a>
   </p>
 
 </div>
